@@ -1,16 +1,20 @@
 # Tetris Autoplayer AI
 
+
+<img width="432" height="620" alt="Game in-progress with the autoplayer, random seed" src="https://github.com/user-attachments/assets/e6e78000-d4f4-4cab-a508-d018daa70eda" />
+
 ## Overview
 
-This is a Python-based Tetris AI. The autoplayer evaluates board states to optimize for high-scoring 4-line clears. 
+A Python-based Tetris AI that evaluates board states to optimize for high-scoring 4-line clears. 
 
-By relying on a carefully tuned multi-feature heuristic, this AI ranked in the top 10% of a 200-student live leaderboard.
+By relying on a carefully tuned multi-feature heuristic, this autoplayer ranked in the top 10% of a 200-student live leaderboard.
+
 
 
 
 ## The Heuristic Algorithm
 
-The AI determines its next move by simulating all possible placements and rotations for the falling tetromino. It scores the resulting board state using a weighted sum of several heuristic features, executing the move that yields the most optimal score.
+The AI determines its next move by simulating all possible placements and rotations for the falling tetromino. It scores the resulting board state using a weighted sum of several heuristic features, executing the move that yields the optimal score.
 
 | Heuristic Feature | Purpose in the Algorithm |
 | --- | --- |
@@ -23,7 +27,7 @@ The AI determines its next move by simulating all possible placements and rotati
 
 ## Custom Game Variant
 
-This specific Tetris variant features unique mechanics that dictated the AI's design:
+This specific Tetris variant features unique mechanics that added constraints to the autoplayer design:
 
 * The game operates on a hard limit of exactly 400 tetrominos.
 * Scoring is heavily biased toward multi-line clears (e.g., clearing 4 rows awards 1600 points).
