@@ -46,5 +46,8 @@ The autoplayer requires Python 3. The Pygame interface is highly recommended as 
 > **Note:** Depending on your environment, you may need to substitute `python` and `pip` with `python3` and `pip3`.
 
 
+## Contributing
+Contributions are welcome! If you'd like to contribute to this project, please fork the repository and submit a pull request with your changes.
+
 ## Acknowledgements
 Based on game code from the UCL Design & Professional Skills module.
